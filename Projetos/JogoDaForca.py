@@ -19,7 +19,7 @@ def menu():
         print("\nLETRAS DIGITADAS")
         print(item, end=" ")
 
-fruta = ["banana", "maça", "pera", "uva", "abacaxi", "abacate", "amora", "ameixa", "acerola", "carambola"]
+fruta = ["5banana", "maça", "pera", "uva", "abacaxi", "abacate", "amora", "ameixa", "acerola", "carambola"]
 animais = ["cachorro", "gato", "coruja", "leão", "tigre", "capivara", "peixe", "gavião", "leopardo"]
 objeto = ["estojo", "caneta", "lapis", "mouse", "grampeador"]
 letra_digitada = []
