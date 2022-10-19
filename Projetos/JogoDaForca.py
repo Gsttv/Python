@@ -14,6 +14,10 @@ def menu():
     ''',end="")
     for item in tracos:
         print("  ", item, end=" ")
+    print("\n")
+    for item in letra_digitada:
+        print("\nLETRAS DIGITADAS")
+        print(item, end=" ")
 
 fruta = ["banana", "maça", "pera", "uva", "abacaxi", "abacate", "amora", "ameixa", "acerola", "carambola"]
 animais = ["cachorro", "gato", "coruja", "leão", "tigre", "capivara", "peixe", "gavião", "leopardo"]
@@ -55,5 +59,5 @@ while True:
     if tracos == list(elemento):
         break
 
-
+print("Vc Ganhou")
 
