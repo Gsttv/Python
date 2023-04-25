@@ -3,7 +3,7 @@ import numpy as np
 
 class FilaCircular:
     def __init__(self, capacidade):
-        self.capacidade = 0
+        self.capacidade = capacidade
         self.inicio = 0
         self.final = -1
         self.numero_elementos = 0
@@ -19,8 +19,10 @@ class FilaCircular:
         if self.__filaCheia():
             print("A fila esta cheia")
             return
+
         if self.final == self.capacidade - 1:
             self.final = -1
+
         self.final += 1
         self.valores[self.final] = valor
         self.numero_elementos += 1
@@ -35,9 +37,18 @@ class FilaCircular:
         else:
             self.numero_elementos -=1
             return temp
-    def primerio(self):
+    def primeiro(self):
         if self.__filaVazia():
-            print("A fila esta vazia")
+            return print(-1)
         else:
-            return self.valores[self.inicio]
+            return print(self.valores[self.inicio])
+
+fila = FilaCircular(3)
+fila.primeiro()
+fila.enfilerar(1)
+fila.enfilerar(2)
+fila.enfilerar(3)
+fila.primeiro()
+fila.desenfilerar()
+fila.primeiro()
 
