@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class FilaCircular:
     def __init__(self, capacidade):
         self.capacidade = capacidade
